@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C6E1D8451D0FA4A2007B7630"
-               BuildableName = "CocoaTouch.app"
-               BlueprintName = "CocoaTouch"
-               ReferencedContainer = "container:CocoaTouch.xcodeproj">
+               BlueprintIdentifier = "C606857B1D0FAED000E1238E"
+               BuildableName = "CocoaTouchSkeleton.app"
+               BlueprintName = "CocoaTouchSkeleton"
+               ReferencedContainer = "container:CocoaTouchSkeleton.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C6E1D8451D0FA4A2007B7630"
-            BuildableName = "CocoaTouch.app"
-            BlueprintName = "CocoaTouch"
-            ReferencedContainer = "container:CocoaTouch.xcodeproj">
+            BlueprintIdentifier = "C606857B1D0FAED000E1238E"
+            BuildableName = "CocoaTouchSkeleton.app"
+            BlueprintName = "CocoaTouchSkeleton"
+            ReferencedContainer = "container:CocoaTouchSkeleton.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C6E1D8451D0FA4A2007B7630"
-            BuildableName = "CocoaTouch.app"
-            BlueprintName = "CocoaTouch"
-            ReferencedContainer = "container:CocoaTouch.xcodeproj">
+            BlueprintIdentifier = "C606857B1D0FAED000E1238E"
+            BuildableName = "CocoaTouchSkeleton.app"
+            BlueprintName = "CocoaTouchSkeleton"
+            ReferencedContainer = "container:CocoaTouchSkeleton.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C6E1D8451D0FA4A2007B7630"
-            BuildableName = "CocoaTouch.app"
-            BlueprintName = "CocoaTouch"
-            ReferencedContainer = "container:CocoaTouch.xcodeproj">
+            BlueprintIdentifier = "C606857B1D0FAED000E1238E"
+            BuildableName = "CocoaTouchSkeleton.app"
+            BlueprintName = "CocoaTouchSkeleton"
+            ReferencedContainer = "container:CocoaTouchSkeleton.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

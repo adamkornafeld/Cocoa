@@ -1,6 +1,6 @@
 //
 //  MasterViewController.swift
-//  CocoaTouch
+//  CocoaTouchSkeleton
 //
 //  Created by Adam Kornafeld on 6/13/16.
 //  Copyright © 2016 Adam Kornafeld. All rights reserved.
