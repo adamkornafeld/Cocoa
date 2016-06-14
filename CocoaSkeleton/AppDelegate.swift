@@ -21,19 +21,21 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         DDLog.addLogger(DDTTYLogger.sharedInstance(), withLevel: .Verbose)
         
         let app = App.instance
-        let context = app.contextCoordinator.mainQueueContext;
         
-        context.performBlock {
-            let predicate = NSPredicate(format: "attribute = %@", "Adam")
-            
-            let ent = context.managedObjectOfClass(Entity.self, predicate: predicate)
-            if let unwrappedEnt = ent as? Entity {
-                DDLogVerbose("\(unwrappedEnt.attribute)")
-            }
-            else {
-                let ent = NSEntityDescription.insertNewObjectForEntityForName(NSStringFromClass(Entity), inManagedObjectContext: context) as! Entity
-                ent.attribute = "Adam"
-                try! context.save()
+        if let context = app.contextCoordinator.mainQueueContext {
+            context.performBlock {
+                let attr = "Anna"
+                let predicate = NSPredicate(format: "attribute = '\(attr)'")
+                
+                let ent = context.managedObjectOfClass(Entity.self, predicate: predicate)
+                if let unwrappedEnt = ent as? Entity {
+                    DDLogVerbose("\(unwrappedEnt.attribute)")
+                }
+                else {
+                    let ent = NSEntityDescription.insertNewObjectForEntityForName(NSStringFromClass(Entity), inManagedObjectContext: context) as! Entity
+                    ent.attribute = attr
+                    try! context.save()
+                }
             }
         }
     }
