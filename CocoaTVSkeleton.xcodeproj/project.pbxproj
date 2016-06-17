@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C63395CD1D147EE400CBB862 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63395CC1D147EE400CBB862 /* AppDelegate.swift */; };
+		C63395CF1D147EE400CBB862 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63395CE1D147EE400CBB862 /* ViewController.swift */; };
+		C63395D21D147EE400CBB862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63395D01D147EE400CBB862 /* Main.storyboard */; };
+		C63395D41D147EE400CBB862 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63395D31D147EE400CBB862 /* Assets.xcassets */; };
+		C63395FB1D147F2D00CBB862 /* CocoaSkeletonCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C63395EA1D147F1900CBB862 /* CocoaSkeletonCore.framework */; };
+		C63395FC1D147F2D00CBB862 /* CocoaSkeletonCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C63395EA1D147F1900CBB862 /* CocoaSkeletonCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C63395E31D147F1900CBB862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C63395DB1D147F1900CBB862 /* CocoaSkeletonCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6E1D7531D0F98B5007B7630;
+			remoteInfo = "CocoaSkeletonCore-iOS";
+		};
+		C63395E51D147F1900CBB862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C63395DB1D147F1900CBB862 /* CocoaSkeletonCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6E1D7601D0F98C3007B7630;
+			remoteInfo = "CocoaSkeletonCore-macOS";
+		};
+		C63395E71D147F1900CBB862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C63395DB1D147F1900CBB862 /* CocoaSkeletonCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C63395871D147CFB00CBB862;
+			remoteInfo = "CocoaSkeletonCore-watchOS";
+		};
+		C63395E91D147F1900CBB862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C63395DB1D147F1900CBB862 /* CocoaSkeletonCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C63395B21D147E1700CBB862;
+			remoteInfo = "CocoaSkeletonCore-tvOS";
+		};
+		C63395FD1D147F2D00CBB862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C63395DB1D147F1900CBB862 /* CocoaSkeletonCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C63395B11D147E1700CBB862;
+			remoteInfo = "CocoaSkeletonCore-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C63395FF1D147F2D00CBB862 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C63395FC1D147F2D00CBB862 /* CocoaSkeletonCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C63395C91D147EE400CBB862 /* CocoaTVSkeleton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaTVSkeleton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C63395CC1D147EE400CBB862 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C63395CE1D147EE400CBB862 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C63395D11D147EE400CBB862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C63395D31D147EE400CBB862 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C63395D51D147EE400CBB862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C63395DB1D147F1900CBB862 /* CocoaSkeletonCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaSkeletonCore.xcodeproj; path = External/CocoaSkeletonCore/CocoaSkeletonCore.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C63395C61D147EE400CBB862 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C63395FB1D147F2D00CBB862 /* CocoaSkeletonCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C63395C01D147EE400CBB862 = {
+			isa = PBXGroup;
+			children = (
+				C63395DB1D147F1900CBB862 /* CocoaSkeletonCore.xcodeproj */,
+				C63395CB1D147EE400CBB862 /* CocoaTVSkeleton */,
+				C63395CA1D147EE400CBB862 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C63395CA1D147EE400CBB862 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C63395C91D147EE400CBB862 /* CocoaTVSkeleton.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C63395CB1D147EE400CBB862 /* CocoaTVSkeleton */ = {
+			isa = PBXGroup;
+			children = (
+				C63395CC1D147EE400CBB862 /* AppDelegate.swift */,
+				C63395CE1D147EE400CBB862 /* ViewController.swift */,
+				C63395D01D147EE400CBB862 /* Main.storyboard */,
+				C63395D31D147EE400CBB862 /* Assets.xcassets */,
+				C63395D51D147EE400CBB862 /* Info.plist */,
+			);
+			path = CocoaTVSkeleton;
+			sourceTree = "<group>";
+		};
+		C63395DC1D147F1900CBB862 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C63395E41D147F1900CBB862 /* CocoaSkeletonCore.framework */,
+				C63395E61D147F1900CBB862 /* CocoaSkeletonCore.framework */,
+				C63395E81D147F1900CBB862 /* CocoaSkeletonCore.framework */,
+				C63395EA1D147F1900CBB862 /* CocoaSkeletonCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C63395C81D147EE400CBB862 /* CocoaTVSkeleton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C63395D81D147EE400CBB862 /* Build configuration list for PBXNativeTarget "CocoaTVSkeleton" */;
+			buildPhases = (
+				C63395C51D147EE400CBB862 /* Sources */,
+				C63395C61D147EE400CBB862 /* Frameworks */,
+				C63395C71D147EE400CBB862 /* Resources */,
+				C63395FF1D147F2D00CBB862 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C63395FE1D147F2D00CBB862 /* PBXTargetDependency */,
+			);
+			name = CocoaTVSkeleton;
+			productName = CocoaTVSkeleton;
+			productReference = C63395C91D147EE400CBB862 /* CocoaTVSkeleton.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C63395C11D147EE400CBB862 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Adam Kornafeld";
+				TargetAttributes = {
+					C63395C81D147EE400CBB862 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C63395C41D147EE400CBB862 /* Build configuration list for PBXProject "CocoaTVSkeleton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C63395C01D147EE400CBB862;
+			productRefGroup = C63395CA1D147EE400CBB862 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C63395DC1D147F1900CBB862 /* Products */;
+					ProjectRef = C63395DB1D147F1900CBB862 /* CocoaSkeletonCore.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C63395C81D147EE400CBB862 /* CocoaTVSkeleton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C63395E41D147F1900CBB862 /* CocoaSkeletonCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaSkeletonCore.framework;
+			remoteRef = C63395E31D147F1900CBB862 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C63395E61D147F1900CBB862 /* CocoaSkeletonCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaSkeletonCore.framework;
+			remoteRef = C63395E51D147F1900CBB862 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C63395E81D147F1900CBB862 /* CocoaSkeletonCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaSkeletonCore.framework;
+			remoteRef = C63395E71D147F1900CBB862 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C63395EA1D147F1900CBB862 /* CocoaSkeletonCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaSkeletonCore.framework;
+			remoteRef = C63395E91D147F1900CBB862 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C63395C71D147EE400CBB862 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C63395D41D147EE400CBB862 /* Assets.xcassets in Resources */,
+				C63395D21D147EE400CBB862 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C63395C51D147EE400CBB862 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C63395CF1D147EE400CBB862 /* ViewController.swift in Sources */,
+				C63395CD1D147EE400CBB862 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C63395FE1D147F2D00CBB862 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CocoaSkeletonCore-tvOS";
+			targetProxy = C63395FD1D147F2D00CBB862 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C63395D01D147EE400CBB862 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C63395D11D147EE400CBB862 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C63395D61D147EE400CBB862 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		C63395D71D147EE400CBB862 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C63395D91D147EE400CBB862 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = CocoaTVSkeleton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kornafeld.CocoaTVSkeleton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C63395DA1D147EE400CBB862 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = CocoaTVSkeleton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kornafeld.CocoaTVSkeleton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C63395C41D147EE400CBB862 /* Build configuration list for PBXProject "CocoaTVSkeleton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C63395D61D147EE400CBB862 /* Debug */,
+				C63395D71D147EE400CBB862 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C63395D81D147EE400CBB862 /* Build configuration list for PBXNativeTarget "CocoaTVSkeleton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C63395D91D147EE400CBB862 /* Debug */,
+				C63395DA1D147EE400CBB862 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C63395C11D147EE400CBB862 /* Project object */;
+}
