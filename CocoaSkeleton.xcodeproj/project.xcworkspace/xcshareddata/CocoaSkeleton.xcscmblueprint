@@ -4,14 +4,18 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "35B5C9A93714EC9BEB56BAE809C5551E5C66E52D" : 0,
+    "B6E16A6BE5489C8A768B73EF44C6CBBE77F988FD" : 0,
     "5AA22BB3026A38F456C2316F1B9669CDF62ABB4E" : 0,
+    "35B5C9A93714EC9BEB56BAE809C5551E5C66E52D" : 0,
+    "C3D8ED1CB28D809ADCE2C0DE74935E8A502ACD53" : 0,
     "7934AB296FE3F4F8278182125D52C1E5E495BF80" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E97E0748-0F99-4F05-A164-84E43AD7564B",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "35B5C9A93714EC9BEB56BAE809C5551E5C66E52D" : "Cocoa\/External\/CocoaCore\/External\/CocoaLumberjack\/",
+    "B6E16A6BE5489C8A768B73EF44C6CBBE77F988FD" : "CocoaSkeleton\/External\/CocoaCore\/External\/Siesta\/",
     "5AA22BB3026A38F456C2316F1B9669CDF62ABB4E" : "Cocoa\/External\/CocoaCore\/",
+    "35B5C9A93714EC9BEB56BAE809C5551E5C66E52D" : "Cocoa\/External\/CocoaCore\/External\/CocoaLumberjack\/",
+    "C3D8ED1CB28D809ADCE2C0DE74935E8A502ACD53" : "CocoaSkeleton\/External\/CocoaCore\/External\/CryptoSwift\/",
     "7934AB296FE3F4F8278182125D52C1E5E495BF80" : "Cocoa\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "CocoaSkeleton",
@@ -32,6 +36,16 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:adamkornafeld\/Cocoa.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7934AB296FE3F4F8278182125D52C1E5E495BF80"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/bustoutsolutions\/siesta.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B6E16A6BE5489C8A768B73EF44C6CBBE77F988FD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:krzyzanowskim\/CryptoSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C3D8ED1CB28D809ADCE2C0DE74935E8A502ACD53"
     }
   ]
 }

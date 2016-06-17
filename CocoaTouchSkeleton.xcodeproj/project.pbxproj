@@ -13,33 +13,7 @@
 		C60685871D0FAED000E1238E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C60685851D0FAED000E1238E /* Main.storyboard */; };
 		C60685891D0FAED000E1238E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60685881D0FAED000E1238E /* Assets.xcassets */; };
 		C606858C1D0FAED000E1238E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C606858A1D0FAED000E1238E /* LaunchScreen.storyboard */; };
-		C606859D1D0FAF2800E1238E /* CocoaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C606859A1D0FAF0400E1238E /* CocoaCore.framework */; };
-		C606859E1D0FAF2800E1238E /* CocoaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C606859A1D0FAF0400E1238E /* CocoaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C60685991D0FAF0400E1238E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C60685931D0FAF0300E1238E /* CocoaCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C6E1D7531D0F98B5007B7630;
-			remoteInfo = "CocoaCore-iOS";
-		};
-		C606859B1D0FAF0400E1238E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C60685931D0FAF0300E1238E /* CocoaCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C6E1D7601D0F98C3007B7630;
-			remoteInfo = "CocoaCore-macOS";
-		};
-		C606859F1D0FAF2800E1238E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C60685931D0FAF0300E1238E /* CocoaCore.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = C6E1D7521D0F98B5007B7630;
-			remoteInfo = "CocoaCore-iOS";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C60685A11D0FAF2800E1238E /* Embed Frameworks */ = {
@@ -48,7 +22,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C606859E1D0FAF2800E1238E /* CocoaCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,7 +37,6 @@
 		C60685881D0FAED000E1238E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C606858B1D0FAED000E1238E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C606858D1D0FAED000E1238E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C60685931D0FAF0300E1238E /* CocoaCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaCore.xcodeproj; path = External/CocoaCore/CocoaCore.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +44,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C606859D1D0FAF2800E1238E /* CocoaCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +53,6 @@
 		C60685731D0FAED000E1238E = {
 			isa = PBXGroup;
 			children = (
-				C60685931D0FAF0300E1238E /* CocoaCore.xcodeproj */,
 				C606857E1D0FAED000E1238E /* CocoaTouchSkeleton */,
 				C606857D1D0FAED000E1238E /* Products */,
 			);
@@ -110,15 +80,6 @@
 			path = CocoaTouchSkeleton;
 			sourceTree = "<group>";
 		};
-		C60685941D0FAF0300E1238E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C606859A1D0FAF0400E1238E /* CocoaCore.framework */,
-				C606859C1D0FAF0400E1238E /* CocoaCore.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,7 +95,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				C60685A01D0FAF2800E1238E /* PBXTargetDependency */,
 			);
 			name = CocoaTouchSkeleton;
 			productName = CocoaTouchSkeleton;
@@ -167,35 +127,12 @@
 			mainGroup = C60685731D0FAED000E1238E;
 			productRefGroup = C606857D1D0FAED000E1238E /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = C60685941D0FAF0300E1238E /* Products */;
-					ProjectRef = C60685931D0FAF0300E1238E /* CocoaCore.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				C606857B1D0FAED000E1238E /* CocoaTouchSkeleton */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		C606859A1D0FAF0400E1238E /* CocoaCore.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaCore.framework;
-			remoteRef = C60685991D0FAF0400E1238E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C606859C1D0FAF0400E1238E /* CocoaCore.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaCore.framework;
-			remoteRef = C606859B1D0FAF0400E1238E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C606857A1D0FAED000E1238E /* Resources */ = {
@@ -222,14 +159,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C60685A01D0FAF2800E1238E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "CocoaCore-iOS";
-			targetProxy = C606859F1D0FAF2800E1238E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C60685851D0FAED000E1238E /* Main.storyboard */ = {

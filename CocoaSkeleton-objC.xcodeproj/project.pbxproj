@@ -12,33 +12,7 @@
 		C641BDC21D108C1B00981627 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C641BDC11D108C1B00981627 /* ViewController.m */; };
 		C641BDC41D108C1B00981627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C641BDC31D108C1B00981627 /* Assets.xcassets */; };
 		C641BDC71D108C1B00981627 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C641BDC51D108C1B00981627 /* Main.storyboard */; };
-		C641BDD81D108C8500981627 /* CocoaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C641BDD71D108C3900981627 /* CocoaCore.framework */; };
-		C641BDD91D108C8500981627 /* CocoaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C641BDD71D108C3900981627 /* CocoaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C641BDD41D108C3900981627 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C641BDCE1D108C3800981627 /* CocoaCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C6E1D7531D0F98B5007B7630;
-			remoteInfo = "CocoaCore-iOS";
-		};
-		C641BDD61D108C3900981627 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C641BDCE1D108C3800981627 /* CocoaCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C6E1D7601D0F98C3007B7630;
-			remoteInfo = "CocoaCore-macOS";
-		};
-		C641BDDA1D108C8500981627 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C641BDCE1D108C3800981627 /* CocoaCore.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = C6E1D75F1D0F98C3007B7630;
-			remoteInfo = "CocoaCore-macOS";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C641BDDC1D108C8500981627 /* Embed Frameworks */ = {
@@ -47,7 +21,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C641BDD91D108C8500981627 /* CocoaCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,7 +37,6 @@
 		C641BDC31D108C1B00981627 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C641BDC61D108C1B00981627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C641BDC81D108C1B00981627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C641BDCE1D108C3800981627 /* CocoaCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaCore.xcodeproj; path = External/CocoaCore/CocoaCore.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +44,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C641BDD81D108C8500981627 /* CocoaCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +53,6 @@
 		C641BDAE1D108C1B00981627 = {
 			isa = PBXGroup;
 			children = (
-				C641BDCE1D108C3800981627 /* CocoaCore.xcodeproj */,
 				C641BDB91D108C1B00981627 /* CocoaSkeleton-objC */,
 				C641BDB81D108C1B00981627 /* Products */,
 			);
@@ -119,15 +89,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C641BDCF1D108C3800981627 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C641BDD51D108C3900981627 /* CocoaCore.framework */,
-				C641BDD71D108C3900981627 /* CocoaCore.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,7 +104,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				C641BDDB1D108C8500981627 /* PBXTargetDependency */,
 			);
 			name = "CocoaSkeleton-objC";
 			productName = "CocoaSkeleton-objC";
@@ -175,35 +135,12 @@
 			mainGroup = C641BDAE1D108C1B00981627;
 			productRefGroup = C641BDB81D108C1B00981627 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = C641BDCF1D108C3800981627 /* Products */;
-					ProjectRef = C641BDCE1D108C3800981627 /* CocoaCore.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				C641BDB61D108C1B00981627 /* CocoaSkeleton-objC */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		C641BDD51D108C3900981627 /* CocoaCore.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaCore.framework;
-			remoteRef = C641BDD41D108C3900981627 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C641BDD71D108C3900981627 /* CocoaCore.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaCore.framework;
-			remoteRef = C641BDD61D108C3900981627 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C641BDB51D108C1B00981627 /* Resources */ = {
@@ -229,14 +166,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C641BDDB1D108C8500981627 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "CocoaCore-macOS";
-			targetProxy = C641BDDA1D108C8500981627 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C641BDC51D108C1B00981627 /* Main.storyboard */ = {

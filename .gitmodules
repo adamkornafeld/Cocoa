@@ -1,3 +1,0 @@
-[submodule "External/CocoaCore"]
-	path = External/CocoaCore
-	url = git@github.com:adamkornafeld/CocoaCore.git
