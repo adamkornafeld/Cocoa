@@ -15,8 +15,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
-        DDTTYLogger.sharedInstance().logFormatter = LogFormatter()
-        DDLog.addLogger(DDTTYLogger.sharedInstance(), withLevel: .Verbose)
         
         let app = App.instance
         

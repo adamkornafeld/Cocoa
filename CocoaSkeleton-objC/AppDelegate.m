@@ -21,9 +21,6 @@ static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
     
-    [DDTTYLogger sharedInstance].logFormatter = [[LogFormatter alloc] init];
-    [DDLog addLogger:[DDTTYLogger sharedInstance] withLevel:DDLogLevelVerbose];
-    
     App *app = [App instance];
     NSManagedObjectContext *context = app.contextCoordinator.mainQueueContext;
     [context performBlock:^{
