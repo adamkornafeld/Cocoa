@@ -680,6 +680,7 @@
 				C633965E1D1482F600CBB862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C63396681D1482F600CBB862 /* Build configuration list for PBXNativeTarget "CocoaWatchSkeleton" */ = {
 			isa = XCConfigurationList;
@@ -688,6 +689,7 @@
 				C633965C1D1482F600CBB862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

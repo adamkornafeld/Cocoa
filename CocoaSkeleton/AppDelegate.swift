@@ -11,14 +11,14 @@ import CocoaSkeletonCore
 import CocoaLumberjackSwift
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
+public class AppDelegate: NSObject, NSApplicationDelegate {
 
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
+    public static let instance = NSApplication.sharedApplication().delegate as! AppDelegate
+    
+    public func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
         
-        let app = App.instance
-        
-        if let context = app.contextCoordinator.mainQueueContext {
+        if let context = App.instance.contextCoordinator.mainQueueContext {
             context.performBlock {
                 let attr = "Anna"
                 let predicate = NSPredicate(format: "attribute = '\(attr)'")
@@ -36,7 +36,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
 
-    func applicationWillTerminate(aNotification: NSNotification) {
+    public func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
 

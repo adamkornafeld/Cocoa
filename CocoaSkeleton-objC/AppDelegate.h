@@ -8,8 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class App;
+
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
++(instancetype)instance;
 
 @end
 

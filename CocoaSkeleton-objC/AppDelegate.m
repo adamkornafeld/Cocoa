@@ -18,11 +18,14 @@ static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 
 @implementation AppDelegate
 
++(AppDelegate *)instance {
+    return (AppDelegate *)[[NSApplication sharedApplication] delegate];
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
     
-    App *app = [App instance];
-    NSManagedObjectContext *context = app.contextCoordinator.mainQueueContext;
+    NSManagedObjectContext *context = App.instance.contextCoordinator.mainQueueContext;
     [context performBlock:^{
         NSString *attr = @"Anna";
         NSPredicate *predicate = [NSPredicate predicateWithFormat:@"attribute = %@", attr];
