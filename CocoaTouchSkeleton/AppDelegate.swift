@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import CocoaCore
+import CocoaSkeletonCore
 import CoreData
 import CocoaLumberjackSwift
 
@@ -28,19 +28,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         splitViewController.delegate = self
         
         let app = App.instance
-        let context = app.contextCoordinator.mainQueueContext;
-        
-        context.performBlock {
-            let predicate = NSPredicate(format: "attribute = %@", "Adam")
-            
-            let ent = context.managedObjectOfClass(Entity.self, predicate: predicate)
-            if let unwrappedEnt = ent as? Entity {
-                DDLogVerbose("\(unwrappedEnt.attribute)")
-            }
-            else {
-                let ent = NSEntityDescription.insertNewObjectForEntityForName(NSStringFromClass(Entity), inManagedObjectContext: context) as! Entity
-                ent.attribute = "Adam"
-                try! context.save()
+        if let context = app.contextCoordinator.mainQueueContext {
+            context.performBlock {
+                let predicate = NSPredicate(format: "attribute = %@", "Adam")
+                
+                let ent = context.managedObjectOfClass(Entity.self, predicate: predicate)
+                if let unwrappedEnt = ent as? Entity {
+                    DDLogVerbose("\(unwrappedEnt.attribute)")
+                }
+                else {
+                    let ent = NSEntityDescription.insertNewObjectForEntityForName(NSStringFromClass(Entity), inManagedObjectContext: context) as! Entity
+                    ent.attribute = "Adam"
+                    try! context.save()
+                }
             }
         }
         

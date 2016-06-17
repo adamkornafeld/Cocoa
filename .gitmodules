@@ -1,0 +1,3 @@
+[submodule "External/CocoaSkeletonCore"]
+	path = External/CocoaSkeletonCore
+	url = git@github.com:adamkornafeld/CocoaSkeletonCore.git

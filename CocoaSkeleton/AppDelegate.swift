@@ -7,13 +7,11 @@
 //
 
 import Cocoa
-import CocoaCore
+import CocoaSkeletonCore
 import CocoaLumberjackSwift
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application

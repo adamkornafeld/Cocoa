@@ -7,12 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C633951C1D1478C600CBB862 /* CocoaSkeletonCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C633951B1D1478A800CBB862 /* CocoaSkeletonCore.framework */; };
+		C633951D1D1478C600CBB862 /* CocoaSkeletonCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C633951B1D1478A800CBB862 /* CocoaSkeletonCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C641BDBC1D108C1B00981627 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C641BDBB1D108C1B00981627 /* AppDelegate.m */; };
 		C641BDBF1D108C1B00981627 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C641BDBE1D108C1B00981627 /* main.m */; };
 		C641BDC21D108C1B00981627 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C641BDC11D108C1B00981627 /* ViewController.m */; };
 		C641BDC41D108C1B00981627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C641BDC31D108C1B00981627 /* Assets.xcassets */; };
 		C641BDC71D108C1B00981627 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C641BDC51D108C1B00981627 /* Main.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C63395181D1478A800CBB862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C63395121D1478A800CBB862 /* CocoaSkeletonCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6E1D7531D0F98B5007B7630;
+			remoteInfo = "CocoaSkeletonCore-iOS";
+		};
+		C633951A1D1478A800CBB862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C63395121D1478A800CBB862 /* CocoaSkeletonCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6E1D7601D0F98C3007B7630;
+			remoteInfo = "CocoaSkeletonCore-macOS";
+		};
+		C633951E1D1478C600CBB862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C63395121D1478A800CBB862 /* CocoaSkeletonCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C6E1D75F1D0F98C3007B7630;
+			remoteInfo = "CocoaSkeletonCore-macOS";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C641BDDC1D108C8500981627 /* Embed Frameworks */ = {
@@ -21,6 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				C633951D1D1478C600CBB862 /* CocoaSkeletonCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -28,6 +55,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C63395121D1478A800CBB862 /* CocoaSkeletonCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaSkeletonCore.xcodeproj; path = External/CocoaSkeletonCore/CocoaSkeletonCore.xcodeproj; sourceTree = "<group>"; };
 		C641BDB71D108C1B00981627 /* CocoaSkeleton-objC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CocoaSkeleton-objC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C641BDBA1D108C1B00981627 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C641BDBB1D108C1B00981627 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -44,15 +72,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C633951C1D1478C600CBB862 /* CocoaSkeletonCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C63395131D1478A800CBB862 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C63395191D1478A800CBB862 /* CocoaSkeletonCore.framework */,
+				C633951B1D1478A800CBB862 /* CocoaSkeletonCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C641BDAE1D108C1B00981627 = {
 			isa = PBXGroup;
 			children = (
+				C63395121D1478A800CBB862 /* CocoaSkeletonCore.xcodeproj */,
 				C641BDB91D108C1B00981627 /* CocoaSkeleton-objC */,
 				C641BDB81D108C1B00981627 /* Products */,
 			);
@@ -104,6 +143,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C633951F1D1478C600CBB862 /* PBXTargetDependency */,
 			);
 			name = "CocoaSkeleton-objC";
 			productName = "CocoaSkeleton-objC";
@@ -135,12 +175,35 @@
 			mainGroup = C641BDAE1D108C1B00981627;
 			productRefGroup = C641BDB81D108C1B00981627 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C63395131D1478A800CBB862 /* Products */;
+					ProjectRef = C63395121D1478A800CBB862 /* CocoaSkeletonCore.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C641BDB61D108C1B00981627 /* CocoaSkeleton-objC */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C63395191D1478A800CBB862 /* CocoaSkeletonCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaSkeletonCore.framework;
+			remoteRef = C63395181D1478A800CBB862 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C633951B1D1478A800CBB862 /* CocoaSkeletonCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaSkeletonCore.framework;
+			remoteRef = C633951A1D1478A800CBB862 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C641BDB51D108C1B00981627 /* Resources */ = {
@@ -166,6 +229,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C633951F1D1478C600CBB862 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CocoaSkeletonCore-macOS";
+			targetProxy = C633951E1D1478C600CBB862 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C641BDC51D108C1B00981627 /* Main.storyboard */ = {

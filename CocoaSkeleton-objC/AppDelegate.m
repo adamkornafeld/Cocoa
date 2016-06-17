@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-@import CocoaCore;
+@import CocoaSkeletonCore;
 @import CocoaLumberjack;
 
 static const DDLogLevel ddLogLevel = DDLogLevelVerbose;

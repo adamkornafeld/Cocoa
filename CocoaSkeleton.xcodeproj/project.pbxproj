@@ -7,11 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C633952A1D14795600CBB862 /* CocoaSkeletonCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C63395291D14794600CBB862 /* CocoaSkeletonCore.framework */; };
+		C633952B1D14795600CBB862 /* CocoaSkeletonCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C63395291D14794600CBB862 /* CocoaSkeletonCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C6E1D8F01D0FA80D007B7630 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D8EF1D0FA80D007B7630 /* AppDelegate.swift */; };
 		C6E1D8F21D0FA80E007B7630 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D8F11D0FA80D007B7630 /* ViewController.swift */; };
 		C6E1D8F41D0FA80E007B7630 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6E1D8F31D0FA80E007B7630 /* Assets.xcassets */; };
 		C6E1D8F71D0FA80E007B7630 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E1D8F51D0FA80E007B7630 /* Main.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C63395261D14794600CBB862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C63395201D14794600CBB862 /* CocoaSkeletonCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6E1D7531D0F98B5007B7630;
+			remoteInfo = "CocoaSkeletonCore-iOS";
+		};
+		C63395281D14794600CBB862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C63395201D14794600CBB862 /* CocoaSkeletonCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6E1D7601D0F98C3007B7630;
+			remoteInfo = "CocoaSkeletonCore-macOS";
+		};
+		C633952C1D14795600CBB862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C63395201D14794600CBB862 /* CocoaSkeletonCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C6E1D75F1D0F98C3007B7630;
+			remoteInfo = "CocoaSkeletonCore-macOS";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C6E1D90C1D0FA84A007B7630 /* Embed Frameworks */ = {
@@ -20,6 +46,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				C633952B1D14795600CBB862 /* CocoaSkeletonCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -27,6 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C63395201D14794600CBB862 /* CocoaSkeletonCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaSkeletonCore.xcodeproj; path = External/CocoaSkeletonCore/CocoaSkeletonCore.xcodeproj; sourceTree = "<group>"; };
 		C6E1D8EC1D0FA80D007B7630 /* CocoaSkeleton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaSkeleton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6E1D8EF1D0FA80D007B7630 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6E1D8F11D0FA80D007B7630 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,15 +68,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C633952A1D14795600CBB862 /* CocoaSkeletonCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C63395211D14794600CBB862 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C63395271D14794600CBB862 /* CocoaSkeletonCore.framework */,
+				C63395291D14794600CBB862 /* CocoaSkeletonCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C6E1D8E31D0FA80D007B7630 = {
 			isa = PBXGroup;
 			children = (
+				C63395201D14794600CBB862 /* CocoaSkeletonCore.xcodeproj */,
 				C6E1D8EE1D0FA80D007B7630 /* CocoaSkeleton */,
 				C6E1D8ED1D0FA80D007B7630 /* Products */,
 			);
@@ -89,6 +128,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C633952D1D14795600CBB862 /* PBXTargetDependency */,
 			);
 			name = CocoaSkeleton;
 			productName = CocoaSkeleton;
@@ -121,12 +161,35 @@
 			mainGroup = C6E1D8E31D0FA80D007B7630;
 			productRefGroup = C6E1D8ED1D0FA80D007B7630 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C63395211D14794600CBB862 /* Products */;
+					ProjectRef = C63395201D14794600CBB862 /* CocoaSkeletonCore.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C6E1D8EB1D0FA80D007B7630 /* CocoaSkeleton */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C63395271D14794600CBB862 /* CocoaSkeletonCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaSkeletonCore.framework;
+			remoteRef = C63395261D14794600CBB862 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C63395291D14794600CBB862 /* CocoaSkeletonCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaSkeletonCore.framework;
+			remoteRef = C63395281D14794600CBB862 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C6E1D8EA1D0FA80D007B7630 /* Resources */ = {
@@ -151,6 +214,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C633952D1D14795600CBB862 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CocoaSkeletonCore-macOS";
+			targetProxy = C633952C1D14795600CBB862 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C6E1D8F51D0FA80E007B7630 /* Main.storyboard */ = {
