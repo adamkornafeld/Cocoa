@@ -18,20 +18,19 @@ public class AppDelegate: NSObject, NSApplicationDelegate {
     public func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
         
-        if let context = App.instance.contextCoordinator.mainQueueContext {
-            context.performBlock {
-                let attr = "Anna"
-                let predicate = NSPredicate(format: "attribute = '\(attr)'")
-                
-                let ent = context.managedObjectOfClass(Entity.self, predicate: predicate)
-                if let unwrappedEnt = ent as? Entity {
-                    DDLogVerbose("\(unwrappedEnt.attribute)")
-                }
-                else {
-                    let ent = NSEntityDescription.insertNewObjectForEntityForName(NSStringFromClass(Entity), inManagedObjectContext: context) as! Entity
-                    ent.attribute = attr
-                    try! context.save()
-                }
+        let context = App.instance.contextCoordinator.mainQueueContext
+        context.performBlock {
+            let attr = "Anna"
+            let predicate = NSPredicate(format: "attribute = '\(attr)'")
+            
+            let ent = context.managedObjectOfClass(Entity.self, predicate: predicate)
+            if let unwrappedEnt = ent as? Entity {
+                DDLogVerbose("\(unwrappedEnt.attribute)")
+            }
+            else {
+                let ent = NSEntityDescription.insertNewObjectForEntityForName(NSStringFromClass(Entity), inManagedObjectContext: context) as! Entity
+                ent.attribute = attr
+                try! context.save()
             }
         }
     }
